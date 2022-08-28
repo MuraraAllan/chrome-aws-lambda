@@ -10,15 +10,15 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": false,
     "inlineSourceMap": false,
-    "lib": ["dom", "es2018"],
+    "lib": ["es2018"],
     "listEmittedFiles": false,
     "listFiles": false,
     "module": "commonjs",
     "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "outDir": "build",
@@ -26,17 +26,18 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "strict": true,
-    "strictFunctionTypes": true,
+    "strict": false,
+    "noEmitOnError": false,
+    "strictFunctionTypes": false,
     "strictNullChecks": false,
     "target": "es2018",
     "traceResolution": false,
     "typeRoots": ["node_modules/@types", "typings"],
     "types": ["node"]
   },
-  "exclude": ["build", "node_modules", "tmp"],
+  "exclude": ["build", "node_modules", "tmp", "devtools-protocol"],
   "include": ["source"],
   "typeAcquisition": {
-    "enable": true
+    "enable": false
   }
 }
